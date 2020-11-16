@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import Sidebar from '../../Sidebar/Sidebar';
-import BookingAllData from '../BookingAllData/BookingAllData';
+import MyRentAllData from '../MyRentAllData/MyRentAllData';
 
-const BookingData = () => {
+const MyRentData = () => {
     const [allOrders, setAllOrders] = useState([]);
 
     useEffect(() => {
@@ -16,13 +16,13 @@ const BookingData = () => {
             <Sidebar></Sidebar>
             <div className="col-md-9 p-4 pr-5" style={{ position: "absolute", right: 0, backgroundColor: "#F4FDFB", padding: '100px' }}>
                 <div className='d-flex justify-content-between booking_header'>
-                    <h3>Booking List</h3>
+                    <h3>My Rent</h3>
                     <h4>sajjat hossain</h4>
                 </div>
-                <BookingAllData allOrder={allOrders} />
+                <MyRentAllData allOrder={allOrders} />
             </div>
         </div>
     );
 };
 
-export default BookingData;
+export default MyRentData;

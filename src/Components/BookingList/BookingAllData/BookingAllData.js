@@ -3,7 +3,7 @@ import '../BookingData/BookingData.css'
 
 const BookingAllData = ({allOrder}) => {
     return (
-        <div className='table_container'>
+       <div className='table_container'>
             <table className="table table-borderless">
                 <thead>
                     <tr>
@@ -31,7 +31,7 @@ const BookingAllData = ({allOrder}) => {
                     }
                 </tbody>
             </table>
-       </div>
+       </div> 
     );
 };
 

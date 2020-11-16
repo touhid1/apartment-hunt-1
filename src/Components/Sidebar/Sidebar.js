@@ -11,10 +11,10 @@ const Sidebar = () => {
     return (
         <div className="sidebar_Container">
             <div className='navigation'>
-                <img src={logo}/>
+                <img src={logo} alt=''/>
                 <ul>
                     <li>
-                        <Link to='/'>
+                        <Link to='/navbar'>
                             <span className='icon'><i class="fa fa-home" aria-hidden="true"></i></span>
                             <span className='title'>Home</span>
                         </Link>
@@ -26,13 +26,13 @@ const Sidebar = () => {
                         </Link>
                     </li>
                     <li>
-                        <Link to='/'>
+                        <Link to='/addHows'>
                             <span className='icon'><i class="fa fa-plus" aria-hidden="true"></i></span>
                             <span className='title'>Add House</span>
                         </Link>
                     </li>
                     <li>
-                        <Link to='/'>
+                        <Link to='/myRent'>
                             <span className='icon'><HomeWorkIcon></HomeWorkIcon></span>
                             <span className='title'>My Rent</span>
                         </Link>
