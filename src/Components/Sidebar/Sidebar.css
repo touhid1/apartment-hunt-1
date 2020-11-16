@@ -1,0 +1,127 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.dash_appointmentList,
+.dash_calender{
+  margin-top: 100px
+}
+
+.dashboard_header{
+    width: 100%;
+}
+
+
+
+.navigation{
+    position: fixed;
+    width: 329px;
+    height: 100%;
+    background: #7AB259;
+    transition: .5s;
+    overflow: hidden;
+    z-index: 99999;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+.navigation:hover,
+.navigation.active
+{
+    width: 329px;
+}
+
+.navigation img{
+    width: 160px;
+    margin: 30px 0;
+    margin-left: -30px;
+}
+
+
+.navigation ul{
+    position: absolute;
+    top: 170px;
+    left: 0;
+    width: 100%;
+}
+
+.navigation ul li{
+    position: relative;
+    width: 100%;
+    list-style: none;
+}
+.navigation ul li:hover{
+    background: #ddd;
+}
+
+.navigation ul li a{
+    position: relative;
+    display: block;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 2px
+}
+
+.navigation ul li a .icon{
+    position: relative;
+    display: block;
+    min-width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+}
+
+.navigation ul li a .icon .fa {
+    font-size: 24px;
+}
+
+
+.signOut{
+  margin-top: 200px
+}
+
+.navigation ul li a .title{
+    position: relative;
+    display: block;
+    padding: 0 10px;
+    height: 60px;
+    line-height: 60px;
+    text-align: start;
+    white-space: nowrap;
+}
+
+
+@media (max-width: 768px) {
+    .navigation{
+        left: -60px;
+        width: 200px;
+    }
+    .navigation img{
+        width: 110px;
+        margin: 44px 0;
+        margin-left: 53px;
+    }
+
+    .navigation.active{
+        left: 10px;
+        width: 100%;
+    }
+}
+
+
+
+
+
+.appointments_list{
+    background: #ddd;
+    padding: 40px;
+    height: 90vh;
+    text-align: center;
+}
